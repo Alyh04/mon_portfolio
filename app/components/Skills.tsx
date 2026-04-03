@@ -26,11 +26,11 @@ export default function Skills() {
         <div className="space-y-6">
           {skills.map((skill) => (
             <div key={skill.name} className="space-y-2">
-              <div className="flex justify-between items-center text-xs font-bold uppercase tracking-widest text-white/80">
+              <div className="flex justify-between items-center text-xs font-bold uppercase tracking-widest text-slate-700">
                 <span>{skill.name}</span>
                 <span>{skill.percentage}%</span>
               </div>
-              <div className="h-1.5 bg-white/5 rounded-full overflow-hidden">
+              <div className="h-1.5 bg-black/10 rounded-full overflow-hidden">
                 <div 
                   className="h-full bg-mercury rounded-full"
                   style={{ width: `${skill.percentage}%` }}
@@ -44,9 +44,9 @@ export default function Skills() {
           <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px before:h-full before:w-0.5 before:bg-gradient-to-b before:from-mercury before:via-accent-blue before:to-transparent">
             {/* CERES */}
             <div className="relative flex items-start gap-6 group">
-              <div className="mt-1 w-10 h-10 shrink-0 bg-mercury text-black rounded-lg flex items-center justify-center z-10 font-bold group-hover:scale-110 transition-transform shadow-lg shadow-sky-500/20">1</div>
+              <div className="mt-1 w-10 h-10 shrink-0 bg-mercury text-white rounded-lg flex items-center justify-center z-10 font-bold group-hover:scale-110 transition-transform shadow-lg shadow-sky-500/20">1</div>
               <div>
-                <h4 className="font-bold text-white tracking-widest uppercase text-sm">Programme CERES @ Fianarantsoa</h4>
+                <h4 className="font-bold text-foreground tracking-widest uppercase text-sm">Programme CERES @ Fianarantsoa</h4>
                 <p className="text-mercury text-xs font-bold mt-1">Sept 2025 - Déc 2025</p>
                 <p className="text-muted text-sm mt-3 leading-relaxed">Digitalisation et centralisation de la gestion des navettes. Développement avec Next.js, Prisma et MySQL.</p>
               </div>
@@ -54,9 +54,9 @@ export default function Skills() {
             
             {/* Complexas */}
             <div className="relative flex items-start gap-6 group">
-              <div className="mt-1 w-10 h-10 shrink-0 bg-white/5 border border-mercury/30 text-mercury rounded-lg flex items-center justify-center z-10 font-bold group-hover:bg-mercury/10 transition-colors">2</div>
+              <div className="mt-1 w-10 h-10 shrink-0 bg-black/5 border border-mercury/30 text-mercury rounded-lg flex items-center justify-center z-10 font-bold group-hover:bg-mercury/10 transition-colors">2</div>
               <div>
-                <h4 className="font-bold text-white tracking-widest uppercase text-sm">Agent de collecte @ Complexas</h4>
+                <h4 className="font-bold text-foreground tracking-widest uppercase text-sm">Agent de collecte @ Complexas</h4>
                 <p className="text-muted text-xs font-bold mt-1">2024</p>
                 <p className="text-muted text-sm mt-3 leading-relaxed">Conduite d'enquêtes terrain et collecte de données fiables pour soutenir des décisions à impact social.</p>
               </div>
@@ -64,9 +64,9 @@ export default function Skills() {
  
             {/* SMMC */}
             <div className="relative flex items-start gap-6 group">
-              <div className="mt-1 w-10 h-10 shrink-0 bg-white/5 border border-mercury/30 text-mercury rounded-lg flex items-center justify-center z-10 font-bold group-hover:bg-mercury/10 transition-colors">3</div>
+              <div className="mt-1 w-10 h-10 shrink-0 bg-black/5 border border-mercury/30 text-mercury rounded-lg flex items-center justify-center z-10 font-bold group-hover:bg-mercury/10 transition-colors">3</div>
               <div>
-                <h4 className="font-bold text-white tracking-widest uppercase text-sm">STAGE SMMC Port @ Toamasina</h4>
+                <h4 className="font-bold text-foreground tracking-widest uppercase text-sm">STAGE SMMC Port @ Toamasina</h4>
                 <p className="text-muted text-xs font-bold mt-1">Août 2022 - Nov 2022</p>
                 <p className="text-muted text-sm mt-3 leading-relaxed">Développement d'un outil de gestion du personnel et de suivi des réparations informatiques sous normes ISO.</p>
               </div>

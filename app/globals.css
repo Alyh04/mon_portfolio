@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #050505; /* Deep Metallic Black */
-  --foreground: #ffffff;
+  --background: #ffffff; /* White Theme */
+  --foreground: #0f172a; /* Slate 900 for text */
   --accent-primary: #e2e8f0; /* Mercury Silver */
   --accent-secondary: #94a3b8; /* Chrome */
   --accent-blue: #38bdf8; /* Electric Blue for borders */
-  --card-bg: rgba(255, 255, 255, 0.03);
+  --card-bg: rgba(0, 0, 0, 0.02);
   --card-border: rgba(56, 189, 248, 0.3); /* Electric Blue border */
-  --muted: #94a3b8;
+  --muted: #475569; /* Slate 600 */
 }
 
 @theme inline {
@@ -28,12 +28,12 @@
 .text-mercury {
   background: linear-gradient(
     90deg, 
-    #71717a 0%, 
-    #a1a1aa 20%, 
-    #ffffff 45%, 
-    #ffffff 55%, 
-    #a1a1aa 80%, 
-    #71717a 100%
+    #3f3f46 0%, 
+    #18181b 20%, 
+    #000000 45%, 
+    #000000 55%, 
+    #18181b 80%, 
+    #3f3f46 100%
   );
   background-size: 200% auto;
   -webkit-background-clip: text;
@@ -45,12 +45,12 @@
 .bg-mercury {
   background: linear-gradient(
     90deg, 
-    #71717a 0%, 
-    #a1a1aa 20%, 
-    #ffffff 45%, 
-    #ffffff 55%, 
-    #a1a1aa 80%, 
-    #71717a 100%
+    #3f3f46 0%, 
+    #18181b 20%, 
+    #000000 45%, 
+    #000000 55%, 
+    #18181b 80%, 
+    #3f3f46 100%
   );
   background-size: 200% auto;
   animation: shimmer 5s ease-in-out infinite;
@@ -60,8 +60,8 @@
 body {
   background-color: var(--background);
   background-image: 
-    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 40%),
-    radial-gradient(circle at 20% 80%, rgba(148, 163, 184, 0.03) 0%, transparent 40%);
+    radial-gradient(circle at 80% 20%, rgba(0, 0, 0, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 20% 80%, rgba(56, 189, 248, 0.08) 0%, transparent 40%);
   color: var(--foreground);
   font-family: var(--font-outfit), sans-serif;
   min-height: 100vh;

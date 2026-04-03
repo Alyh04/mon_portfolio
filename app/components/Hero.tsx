@@ -11,7 +11,7 @@ export default function Hero() {
             Master 1 Computer Science Student & Full-Stack Developer
           </p>
           <h1 className="text-6xl md:text-7xl font-bold leading-tight">
-            Hello, Je suis <span className="text-mercury">Lorniot Marcel</span> 🧸
+            Hello, Je suis <span className="text-mercury">Lorniot Marcel</span> !
           </h1>
           <p className="text-muted max-w-lg leading-relaxed">
             Passionné par le développement web et mobile, je conçois des solutions
@@ -24,7 +24,7 @@ export default function Hero() {
           <a 
             href="https://github.com/Alyh04" 
             target="_blank"
-            className="px-8 py-4 bg-mercury text-black font-bold rounded-2xl hover:scale-105 transition-transform flex items-center gap-2 shadow-lg shadow-sky-500/30"
+            className="px-8 py-4 bg-mercury text-white font-bold rounded-2xl hover:scale-105 transition-transform flex items-center gap-2 shadow-lg shadow-sky-500/30"
           >
             GitHub <span>→</span>
           </a>
@@ -37,7 +37,7 @@ export default function Hero() {
           ].map((stat) => (
             <div key={stat.label}>
               <p className="text-3xl font-bold text-mercury">{stat.value}</p>
-              <p className="text-sm text-slate-400">{stat.label}</p>
+              <p className="text-sm text-slate-600">{stat.label}</p>
             </div>
           ))}
         </div>
@@ -45,11 +45,11 @@ export default function Hero() {
 
       <div className="relative w-full max-w-md aspect-square">
         {/* Organic Shape Background - Mercury tint */}
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-200 to-slate-400 rounded-[40%_60%_70%_30%/40%_50%_60%_40%] animate-pulse-slow opacity-90 shadow-2xl shadow-sky-500/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-sky-100 to-indigo-200 rounded-[40%_60%_70%_30%/40%_50%_60%_40%] animate-pulse-slow opacity-90 shadow-2xl shadow-sky-500/30"></div>
         {/* Current Avatar from CV Photo */}
-        <div className="absolute inset-4 overflow-hidden rounded-[40%_60%_70%_30%/40%_50%_60%_40%] border-4 border-white/10">
+        <div className="absolute inset-4 overflow-hidden rounded-[40%_60%_70%_30%/40%_50%_60%_40%] border-4 border-black/10">
           <img 
-            src="profil.jpeg" 
+            src="profil.png" 
             alt="Lorniot Marcel"
             className="w-full h-full object-cover"
           />

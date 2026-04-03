@@ -54,7 +54,7 @@ export default function Services() {
             <div className="w-12 h-12 bg-mercury rounded-xl flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
               {service.icon}
             </div>
-            <h3 className="text-xl font-bold text-white">{service.title}</h3>
+            <h3 className="text-xl font-bold text-foreground">{service.title}</h3>
             <p className="text-muted leading-relaxed text-sm">
               {service.description}
             </p>
@@ -66,7 +66,7 @@ export default function Services() {
         <a 
           href="https://github.com/Alyh04" 
           target="_blank" 
-          className="px-8 py-3 bg-mercury text-black font-bold rounded-xl hover:scale-105 transition-all shadow-lg shadow-sky-500/20"
+          className="px-8 py-3 bg-mercury text-white font-bold rounded-xl hover:scale-105 transition-all shadow-lg shadow-sky-500/20"
         >
           Voir tous les projets <span>→</span>
         </a>

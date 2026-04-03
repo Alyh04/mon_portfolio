@@ -44,7 +44,7 @@ export default function About() {
               />
             </div>
           ))}
-          <div className="absolute -bottom-6 -right-6 lg:-right-12 bg-mercury text-black px-8 py-4 rounded-2xl shadow-xl shadow-sky-500/30">
+          <div className="absolute -bottom-6 -right-6 lg:-right-12 bg-mercury text-white px-8 py-4 rounded-2xl shadow-xl shadow-sky-500/30">
             <p className="text-2xl font-bold">Madagascar</p>
             <p className="text-xs font-medium uppercase tracking-widest text-center">Based</p>
           </div>
@@ -56,7 +56,7 @@ export default function About() {
           <h2 className="text-4xl font-bold">
             À Propos de <span className="text-mercury">Moi</span>
           </h2>
-          <p className="text-slate-400 font-medium">Lorniot Marcel - Étudiant en Master 1 @ ENI</p>
+          <p className="text-slate-600 font-medium">Lorniot Marcel - Étudiant en Master 1 @ ENI</p>
           <p className="text-muted leading-relaxed">
             Je suis passionné par la création de solutions technologiques qui ont un impact réel. 
             Au-delà du code, je maîtrise les outils de communication visuelle et je possède une 
@@ -72,7 +72,7 @@ export default function About() {
                 {exp.icon}
               </div>
               <div className="space-y-1">
-                <h4 className="font-bold text-white uppercase text-xs tracking-widest">{exp.title}</h4>
+                <h4 className="font-bold text-foreground uppercase text-xs tracking-widest">{exp.title}</h4>
                 <p className="text-muted text-sm leading-snug">{exp.details}</p>
               </div>
             </div>
@@ -80,7 +80,7 @@ export default function About() {
         </div>
 
         <div className="flex gap-4 pt-4">
-          <a href="mailto:lorniotmarcel@gmail.com" className="px-8 py-3 bg-mercury text-black font-bold rounded-xl hover:scale-105 transition-all shadow-lg shadow-sky-500/30 flex items-center gap-3">
+          <a href="mailto:lorniotmarcel@gmail.com" className="px-8 py-3 bg-mercury text-white font-bold rounded-xl hover:scale-105 transition-all shadow-lg shadow-sky-500/30 flex items-center gap-3">
             Me Contacter
             <div className="w-5 h-5 relative">
               <Image 
