@@ -1,21 +1,16 @@
 "use client";
 
-import { GraduationCap, PenTool, Zap, Mail } from "lucide-react";
+import { GraduationCap, Zap, Mail } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
 const experiences = [
   {
     title: "Formation",
-    details:
-      "Master 1 en Informatique (en cours) - Ecole Nationale d'Informatique (ENI)",
+    details: <>Master 1 en Informatique (en cours) - <a href="https://eni.mg/" target="_blank" rel="noopener noreferrer" className="hover:underline text-white/90">Ecole Nationale d'Informatique (ENI)</a></>,
     icon: GraduationCap,
   },
 
-  {
-    title: "Création Visuelle",
-    details: "Canva, Figma, Flyers, supports graphiques",
-    icon: PenTool,
-  },
+
   {
     title: "Soft Skills",
     details: "",
@@ -64,11 +59,16 @@ export default function About() {
                 Lorniot Marcel - Étudiant en Master 1 @ ENI
               </p>
               <p className="text-white/80 leading-relaxed">
-                Je suis passionné par la création de solutions technologiques qui
-                ont un impact réel. Au-delà du code, je maîtrise les outils de
-                communication visuelle et je possède une grande curiosité
-                intellectuelle qui me permet de m&apos;adapter rapidement aux
-                nouveaux défis de l&apos;industrie numérique.
+                Passionné par l&apos;impact réel de la technologie, je ne fais
+                pas que coder : je résous vos problèmes business. Ma force,
+                c&apos;est de prendre un besoin complexe, de le décortiquer et
+                de le vulgariser pour concevoir la solution la plus simple et la
+                plus performante possible. Grâce à ma double compétence en
+                analyse et en communication visuelle, je fais le pont parfait
+                entre vos objectifs techniques et vos enjeux business. Si vous
+                cherchez quelqu&apos;un qui comprend vite, s&apos;adapte
+                immédiatement et transforme vos défis en produits à forte valeur
+                ajoutée, c&apos;est mon profil qu&apos;il vous faut.
               </p>
             </div>
           </ScrollReveal>
@@ -90,7 +90,7 @@ export default function About() {
                         aria-hidden="true"
                       />
                     </div>
-                    <div className="space-y-1 min-w-0">
+                    <div className="space-y-1">
                       <h3 className="font-semibold text-white text-xs uppercase tracking-widest">
                         {exp.title}
                       </h3>
